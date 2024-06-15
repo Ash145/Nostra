@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <!-- Tailwind css cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .frame{
+            fill: white;
+        }
+
+    </style>
+
+</head>
+<body>
+    <section class="flex gap-20 justify-center bg-gray-800 text-white p-1">
+        <p class="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order </p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 cursor-pointer">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+    </section>
+
+    <nav class="flex justify-between p-3 py-5 shadow-xl sticky top-0 bg-white z-50">
+        <h1 class="text-2xl font-bold">Nostra</h1>
+        <div class="md:hidden">
+            <svg id="open-nav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+        </div>
+        <div class="md:flex gap-3 md:gap-5 lg:gap-7 xl:gap-12 2xl:gap-14 hidden">
+            <a href="">Home</a>
+            <a href="">New Arrival</a>
+            <a href="">Most Wanted</a>
+            <a href="./collections.html">Collections</a>
+            <a href="">Contact Us</a>
+        </div>
+    </nav>
+
+    <section class="mx-3 py-0 flex items-center relative overflow-hidden">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute w-14 md:w-20 lg:w-28 xl:w-32 2xl:w-36 left-5 md:left-10 lg:left-14 xl:left-20 2xl:left-24 z-10" style="color:white">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+        </svg>
+        <div class="absolute text-white flex flex-col items-center" style="width: 100%;">
+            <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl xl:text-6xl 2xl:text-7xl text-center mb-3">Level up your style with our</h1>
+            <p class="font-bold text-base md:text-lg lg:text-xl xl:text-xl 2xl:text-2xl mb-3">Summer Collections</p>
+            <button class="bg-white text-black text-xs flex items-center gap-2 p-2 md:text-sm md:p-2.5 z-0">
+                Shop Now
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>                  
+            </button>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="absolute w-14 md:w-20 lg:w-28 xl:w-32 2xl:w-36 right-5 md:right-10 lg:right-14 xl:right-20 2xl:right-24 z-10" style="color: white;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+        </svg>
+        <div class="flex" style="width: 100%;">
+            <img src="./images/slider-one.jpg" alt="" style="width: 100%;">
+            <img src="./images/slider-one.jpg" alt="" style="width: 100%;">
+        </div>  
+    </section>
+
+    <section class="m-3 my-10">
+        <h1 class="font-bold text-2xl">Brands</h1>
+        <div class="flex justify-between mt-5">
+            <div class="flex flex-col items-center">
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/behance.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Puma</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/adidas.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Adidas</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/simple.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Simple</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/leaves.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Puma</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/behance.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Puma</p>
+            </div>
+            <div class="flex flex-col items-center">   
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/twitch.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Puma</p>
+            </div>
+            <div class="flex flex-col items-center">
+                <img class="w-7 md:w-10 lg:w-14 xl:w-20 2xl:w-24" src="./images/leaves.png" alt="">
+                <p class="text-xs md:text-sm lg:text-lg xl:text-xl 2xl:text-2xl">Puma</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-3 mb-10">
+        <div class="flex flex-col mb-3 lg:flex-row lg:justify-between lg:items-center">
+            <div class="text-2xl lg:text-3xl xl:text-4xl font-bold mb-2">
+                <h1>We Provide Best</h1>
+                <h1>Customer Experiences</h1>
+            </div>
+            <div>
+                <p class="text-sm md:text-lg lg:text-xl xl:text-2xl">|| We ensure that our customer have the best shopping experience</p>
+            </div>
+        </div>
+        <div class="flex gap-2 customer-container">
+            <div class="customer-card flex flex-col bg-gray-200 p-3 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 lg:w-12 xl:w-16 mb-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+                </svg>
+                <h1 class="font-bold mb-1 lg:text-xl">Original Products</h1>
+                <p class="text-sm lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iure.</p>  
+            </div>
+            <div class="customer-card flex flex-col bg-gray-200 p-3 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 lg:w-12 xl:w-16 mb-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.182 15.182a4.5 4.5 0 0 1-6.364 0M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0ZM9.75 9.75c0 .414-.168.75-.375.75S9 10.164 9 9.75 9.168 9 9.375 9s.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Zm5.625 0c0 .414-.168.75-.375.75s-.375-.336-.375-.75.168-.75.375-.75.375.336.375.75Zm-.375 0h.008v.015h-.008V9.75Z" />
+                </svg>
+                <h1 class="font-bold mb-1 lg:text-xl">Satisfaction Guarantee</h1>
+                <p class="text-sm lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iure.</p>  
+            </div>
+            <div class="customer-card flex flex-col bg-gray-200 p-3 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 lg:w-12 xl:w-16 mb-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.53 16.122a3 3 0 0 0-5.78 1.128 2.25 2.25 0 0 1-2.4 2.245 4.5 4.5 0 0 0 8.4-2.245c0-.399-.078-.78-.22-1.128Zm0 0a15.998 15.998 0 0 0 3.388-1.62m-5.043-.025a15.994 15.994 0 0 1 1.622-3.395m3.42 3.42a15.995 15.995 0 0 0 4.764-4.648l3.876-5.814a1.151 1.151 0 0 0-1.597-1.597L14.146 6.32a15.996 15.996 0 0 0-4.649 4.763m3.42 3.42a6.776 6.776 0 0 0-3.42-3.42" />
+                </svg>                  
+                <h1 class="font-bold mb-1 lg:text-xl">New Arrival Everyday</h1>
+                <p class="text-sm lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iure.</p>  
+            </div>
+            <div class="customer-card flex flex-col bg-gray-200 p-3 rounded-md">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 lg:w-12 xl:w-16 mb-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 18.75a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h6m-9 0H3.375a1.125 1.125 0 0 1-1.125-1.125V14.25m17.25 4.5a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m3 0h1.125c.621 0 1.129-.504 1.09-1.124a17.902 17.902 0 0 0-3.213-9.193 2.056 2.056 0 0 0-1.58-.86H14.25M16.5 18.75h-2.25m0-11.177v-.958c0-.568-.422-1.048-.987-1.106a48.554 48.554 0 0 0-10.026 0 1.106 1.106 0 0 0-.987 1.106v7.635m12-6.677v6.677m0 4.5v-4.5m0 0h-12" />
+                </svg>                  
+                <h1 class="font-bold mb-1 lg:text-xl">Fast & Free Shipping</h1>
+                <p class="text-sm lg:text-lg">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam, iure.</p>  
+            </div>
+        </div>
+    </section>
+
+    <section class="m-3 mb-10">
+        <h1 class="text-2xl font-bold mb-4">New Arrivals</h1>
+        <div class="arrivals-container flex gap-2">
+            <div class="arrivals-card rounded-lg flex items-center justify-center relative">
+                <img class="rounded-lg" src="./images/f1.jpg" alt="" style="width: 100%;">
+                <button class="absolute hover:bg-gray-800 hover:text-white transition-all duration-200 rounded-lg bg-white text-black text-xs flex items-center gap-2 p-2 md:text-sm md:p-2.5 z-10">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                        <path class="shop" stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>                  
+                </button>
+                <div class="overlay z-0" style="width: 100%;"></div>
+            </div>
+            <div class="arrivals-card rounded-lg flex items-center justify-center relative">
+                <img class="rounded-lg" src="./images/f7.jpg" alt="" style="width: 100%;">
+                <button class="absolute hover:bg-gray-800 hover:text-white transition-all duration-200 rounded-lg bg-white text-black text-xs flex items-center gap-2 p-2 md:text-sm md:p-2.5 z-10">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                        <path class="shop" stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>                  
+                </button>
+                <div class="overlay z-0" style="width: 100%;"></div>
+            </div>
+            <div class="arrivals-card rounded-lg flex items-center justify-center relative">
+                <img class="rounded-lg" src="./images/n1.jpg" alt="" style="width: 100%;">
+                <button class="absolute hover:bg-gray-800 hover:text-white transition-all duration-200 rounded-lg bg-white text-black text-xs flex items-center gap-2 p-2 md:text-sm md:p-2.5 z-10">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                        <path class="shop" stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>                  
+                </button>
+                <div class="overlay z-0" style="width: 100%;"></div>
+            </div>
+            <div class="arrivals-card rounded-lg flex items-center justify-center relative">
+                <img class="rounded-lg" src="./images/n7.jpg" alt="" style="width: 100%;">
+                <button class="absolute hover:bg-gray-800 hover:text-white transition-all duration-200 rounded-lg bg-white text-black text-xs flex items-center gap-2 p-2 md:text-sm md:p-2.5 z-10">
+                    Shop Now
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                        <path class="shop" stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                    </svg>                  
+                </button>
+                <div class="overlay z-0" style="width: 100%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="m-3 mb-10">
+        <h1 class="font-bold text-2xl">Most Wanted</h1>
+        <div class="wanted-container flex gap-2">
+            <div class="wanted-card relative">
+                <img src="./images/n8.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl  bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>   
+            </div>
+            <div class="wanted-card relative">
+                <img src="./images/f1.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg> 
+            </div>
+            <div class="wanted-card relative">
+                <img src="./images/n1.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg> 
+            </div>
+            <div class="wanted-card relative">
+                <img src="./images/n8.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg> 
+            </div>
+            <!-- <div class="wanted-card relative">
+                <img src="./images/n8.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl  bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg>   
+            </div>
+            <div class="wanted-card relative">
+                <img src="./images/f1.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg> 
+            </div>
+            <div class="wanted-card relative">
+                <img src="./images/n1.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg> 
+            </div>
+            <div class="wanted-card relative">
+                <img src="./images/n8.jpg" alt="" style="width: 100%;">
+                <p class="absolute p-1 text-base md:text-xl lg:text-2xl bg-red-600 text-white top-1 left-1 w-14 md:w-16 lg:w-20 text-center rounded-lg">Sale</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-10 absolute bottom-5 right-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                </svg> 
+            </div> -->
+        </div>
+    </section>
+
+    <section class="bg-gray-800 flex gap-20 justify-center p-8 m-3 mb-10">
+        <div>
+            <img src="./images/offer.jpg" alt="">
+        </div>
+        <div class="flex flex-col items-start justify-center gap-4 text-white">
+            <h1 class="text-sm md:text-3xl lg:text-4xl xl:text-5xl font-bold">Limited Offer</h1>
+            <p class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">35% OFF on this for the first 30 Customers</p>
+            <button class="bg-white hover:bg-opacity-80 transition-all duration-200 rounded-lg text-black text-xs flex items-center gap-2 p-1 md:text-sm md:p-2.5 xl:p-3  z-0">
+                Shop Now
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+                </svg>                  
+            </button>
+        </div>
+    </section>
+
+    <section class="flex flex-col gap-3 items-center m-3 mb-10">
+        <h1 class="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">Join our News Letter</h1>
+        <p class="text-xs md:text-sm lg:text-xl xl:text-2xl 2xl:text-3xl">Signup for our email newspaper to get exclusive discounts, updates, and more</p>
+        <input type="text" class="container border-2 border-gray-800 p-1">
+        <button class="bg-gray-800 hover:opacity-90 transition-all duration-200 rounded-lg mt-2 text-white text-xs lg:text-xl flex items-center gap-2 p-2 md:text-sm md:p-2.5 xl:p-3  z-0">
+            Shop Now
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3" />
+            </svg>                  
+        </button>
+    </section>
+
+    <section class="bg-gray-800 text-white flex flex-col gap-4 p-10 lg:p-12">
+        <h1 class="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">Nostra</h1>
+        <p class="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">The Standard chunk of Lorem ipsum used since the 1500s is reprodused below for those interest</p>
+        <div class="flex gap-3 md:gap-4 lg:gap-5 xl:gap-6">
+            <svg class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" xmlns="http://www.w3.org/2000/svg" width="2500" height="2500" viewBox="0 0 2476 2476" id="instagram"><path class="frame" d="M825.4 1238c0-227.9 184.7-412.7 412.6-412.7 227.9 0 412.7 184.8 412.7 412.7 0 227.9-184.8 412.7-412.7 412.7-227.9 0-412.6-184.8-412.6-412.7m-223.1 0c0 351.1 284.6 635.7 635.7 635.7s635.7-284.6 635.7-635.7-284.6-635.7-635.7-635.7S602.3 886.9 602.3 1238m1148-660.9c0 82 66.5 148.6 148.6 148.6 82 0 148.6-66.6 148.6-148.6s-66.5-148.5-148.6-148.5-148.6 66.5-148.6 148.5M737.8 2245.7c-120.7-5.5-186.3-25.6-229.9-42.6-57.8-22.5-99-49.3-142.4-92.6-43.3-43.3-70.2-84.5-92.6-142.3-17-43.6-37.1-109.2-42.6-229.9-6-130.5-7.2-169.7-7.2-500.3s1.3-369.7 7.2-500.3c5.5-120.7 25.7-186.2 42.6-229.9 22.5-57.8 49.3-99 92.6-142.4 43.3-43.3 84.5-70.2 142.4-92.6 43.6-17 109.2-37.1 229.9-42.6 130.5-6 169.7-7.2 500.2-7.2 330.6 0 369.7 1.3 500.3 7.2 120.7 5.5 186.2 25.7 229.9 42.6 57.8 22.4 99 49.3 142.4 92.6 43.3 43.3 70.1 84.6 92.6 142.4 17 43.6 37.1 109.2 42.6 229.9 6 130.6 7.2 169.7 7.2 500.3 0 330.5-1.2 369.7-7.2 500.3-5.5 120.7-25.7 186.3-42.6 229.9-22.5 57.8-49.3 99-92.6 142.3-43.3 43.3-84.6 70.1-142.4 92.6-43.6 17-109.2 37.1-229.9 42.6-130.5 6-169.7 7.2-500.3 7.2-330.5 0-369.7-1.2-500.2-7.2M727.6 7.5c-131.8 6-221.8 26.9-300.5 57.5-81.4 31.6-150.4 74-219.3 142.8C139 276.6 96.6 345.6 65 427.1 34.4 505.8 13.5 595.8 7.5 727.6 1.4 859.6 0 901.8 0 1238s1.4 378.4 7.5 510.4c6 131.8 26.9 221.8 57.5 300.5 31.6 81.4 73.9 150.5 142.8 219.3 68.8 68.8 137.8 111.1 219.3 142.8 78.8 30.6 168.7 51.5 300.5 57.5 132.1 6 174.2 7.5 510.4 7.5 336.3 0 378.4-1.4 510.4-7.5 131.8-6 221.8-26.9 300.5-57.5 81.4-31.7 150.4-74 219.3-142.8 68.8-68.8 111.1-137.9 142.8-219.3 30.6-78.7 51.6-168.7 57.5-300.5 6-132.1 7.4-174.2 7.4-510.4s-1.4-378.4-7.4-510.4c-6-131.8-26.9-221.8-57.5-300.5-31.7-81.4-74-150.4-142.8-219.3C2199.4 139 2130.3 96.6 2049 65c-78.8-30.6-168.8-51.6-300.5-57.5-132-6-174.2-7.5-510.4-7.5-336.3 0-378.4 1.4-510.5 7.5"></path></svg>
+            <svg class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="twitter"><path class="frame" d="M16 3.539a6.839 6.839 0 0 1-1.89.518 3.262 3.262 0 0 0 1.443-1.813 6.555 6.555 0 0 1-2.08.794 3.28 3.28 0 0 0-5.674 2.243c0 .26.022.51.076.748a9.284 9.284 0 0 1-6.761-3.431 3.285 3.285 0 0 0 1.008 4.384A3.24 3.24 0 0 1 .64 6.578v.036a3.295 3.295 0 0 0 2.628 3.223 3.274 3.274 0 0 1-.86.108 2.9 2.9 0 0 1-.621-.056 3.311 3.311 0 0 0 3.065 2.285 6.59 6.59 0 0 1-4.067 1.399c-.269 0-.527-.012-.785-.045A9.234 9.234 0 0 0 5.032 15c6.036 0 9.336-5 9.336-9.334 0-.145-.005-.285-.012-.424A6.544 6.544 0 0 0 16 3.539z"></path></svg>
+            <svg class="w-6 h-6 md:w-8 md:h-8 lg:w-10 lg:h-10 xl:w-12 xl:h-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="facebook"><path class="frame" d="M50.8,3.57A45.75,45.75,0,1,0,96.54,49.32,45.8,45.8,0,0,0,50.8,3.57ZM63.49,30.71a.69.69,0,0,1-.69.69H57.3a2.45,2.45,0,0,0-2.45,2.44V39.6h7.83a.69.69,0,0,1,.68.75l-.68,8.12a.69.69,0,0,1-.69.63H54.85V76.05a.69.69,0,0,1-.69.69H44.31a.69.69,0,0,1-.69-.69V49.1H38.7a.69.69,0,0,1-.69-.69V40.29a.69.69,0,0,1,.69-.69h4.92V31.78A9.88,9.88,0,0,1,53.5,21.9h9.3a.69.69,0,0,1,.69.69Z"></path></svg>
+        </div>
+        <p class="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">&copy; 2024 Nostra.com</p>
+    </section>
+</body>
+</html>
