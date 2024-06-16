@@ -16,31 +16,177 @@
         .frame{
             fill: white;
         }
+
+        .filter{
+            flex: 1; 
+            border-right: 3px solid black;
+        }
+
+        .products{
+             flex: 3;
+        }
+
+        .products-card{
+            flex-grow: 1;
+            flex-basis: 25%;
+        }
+
     </style>
 </head>
 <body>
-    <section class="flex gap-20 justify-center bg-gray-800 text-white p-1">
+    <section class="offer flex gap-20 justify-center bg-gray-800 text-white p-1">
         <p class="text-xs md:text-sm lg:text-base xl:text-lg 2xl:text-2xl">Sign Up and <span class="font-bold">GET 20% OFF</span> for your first Order </p>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 cursor-pointer">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 cursor-pointer close-offer">
             <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
         </svg>
     </section>
 
-    <nav class="flex justify-between p-3 py-5 shadow-xl sticky top-0 bg-white z-50">
+    <nav class="flex justify-between p-3 py-5 shadow-xl sticky top-0 bg-white z-40">
         <h1 class="text-2xl font-bold">Nostra</h1>
         <div class="md:hidden">
-            <svg id="open-nav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            <svg id="open-nav" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-7 h-7 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"  />
             </svg>
         </div>
         <div class="md:flex gap-3 md:gap-5 lg:gap-7 xl:gap-12 2xl:gap-14 hidden">
-            <a href="">Home</a>
+            <a href="./index.html">Home</a>
             <a href="">New Arrival</a>
             <a href="">Most Wanted</a>
-            <a href="">Collections</a>
-            <a href="">Contact Us</a>
+            <a href="./collections.html">Collections</a>
+            <a href="./contact.html">Contact Us</a>
         </div>
     </nav>
+
+    <section class="side-nav p-5 fixed flex flex-col gap-3 bg-gray-800 transition-all duration-700 text-white z-50 top-0" style="height: 100vh; width: 45%; left: -50%;">
+        <div class="self-end">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close-nav w-5 cursor-pointer">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" style="font-weight: 600;" />
+            </svg>
+              
+        </div>
+        <div class="flex flex-col gap-10">
+            <a href="./index.html">Home</a>
+            <a href="">New Arrival</a>
+            <a href="">Most Wanted</a>
+            <a href="./collections.html">Collections</a>
+            <a href="./contact.html">Contact Us</a>
+        </div>
+    </section>
+
+    <section class="collections flex mt-5 mb-12">
+        <div class="filter flex flex-col gap-5 p-4">
+            <div class="flex flex-col justify-center">
+                <h1 class="font-bold text-base md:text-xl lg:text-2xl xl:text-3xl mb-3">Occasion</h1>
+                <div class="flex flex-col text-sm md:text-lg lg:text-xl xl:text-2xl">
+                    <div>
+                        <input id="summer" type="checkbox">
+                        <label for="summer">Summer</label>
+                    </div>
+                    <div>
+                        <input id="party" type="checkbox">
+                        <label for="party">Party</label>
+                    </div>
+                    <div>
+                        <input id="beach" type="checkbox">
+                        <label for="beach">Beach</label>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="flex flex-col">
+                <h1 class="font-bold text-base md:text-xl lg:text-2xl xl:text-3xl mb-3">Colors</h1>
+                <div class="flex flex-col text-sm md:text-lg lg:text-xl xl:text-2xl">
+                    <div>
+                        <input id="red" type="checkbox">
+                        <label for="red">Red</label>
+                    </div>
+                    <div>
+                        <input id="blue" type="checkbox">
+                        <label for="blue">Blue</label>
+                    </div>
+                    <div>
+                        <input id="white" type="checkbox">
+                        <label for="white">White</label>
+                    </div>
+                    <div>
+                        <input id="green" type="checkbox">
+                        <label for="green">Green</label>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="flex flex-col justify-center">
+                <h1 class="font-bold text-base md:text-xl lg:text-2xl xl:text-3xl mb-3">Arrivals</h1>
+                <div class="flex flex-col text-sm md:text-lg lg:text-xl xl:text-2xl">
+                    <div>
+                        <input id="new" type="checkbox">
+                        <label for="new">New</label>
+                    </div>
+                    <div>
+                        <input id="old" type="checkbox">
+                        <label for="old">Old</label>
+                    </div>
+                </div> 
+            </div>
+        </div>
+        <div class="products p-6 py-3">
+            <div class="border border-black flex p-1.5 rounded-lg">
+                <input type="text" class="text-sm focus:outline-none search" placeholder="Search" style="width: 100%;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                </svg>       
+            </div>
+
+            <div class="products-container flex justify-between flex-wrap gap-8 mt-5 md:mt-7 lg:mt-8 xl:mt-10">
+                <div class="products-card">
+                    <img src="./images/f1.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Floral Summer Shirt</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹220</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f2.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Summer Green</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹260</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f3.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Party Floral Shirt</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹399</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f4.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Floral Summer Shirt</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹399</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f5.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Beach Shirt</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹579</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f6.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Shirt Party Red</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹579</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f3.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Party Floral Shirt</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹399</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f6.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Shirt Party Red</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹579</p>
+                </div>
+                <div class="products-card">
+                    <img src="./images/f1.jpg" alt="" style="width: 100%;">
+                    <h1 class="font-bold text-xs md:text-base lg:text-xl xl:text-2xl 2xl:text-3xl">Floral Summer Shirt</h1>
+                    <p class="text-xs md:text-sm lg:text-base xl:text-xl">₹220</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
 
     <section class="flex flex-col gap-3 items-center m-3 mb-10">
         <h1 class="text-lg md:text-2xl lg:text-3xl xl:text-4xl 2xl:text-5xl font-bold">Join our News Letter</h1>
@@ -64,5 +210,7 @@
         </div>
         <p class="text-sm md:text-base lg:text-lg xl:text-xl 2xl:text-2xl">&copy; 2024 Nostra.com</p>
     </section>
+
+    <script src="./collections.js"></script>
 </body>
 </html>
