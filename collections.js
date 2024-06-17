@@ -36,3 +36,32 @@ search.addEventListener("keyup", function(){
         }
     }
 })
+
+let checkBoxes = document.getElementsByName("check")
+console.log(checkBoxes)
+
+checkBoxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', filterProducts);
+});
+
+function filterProducts() {
+    
+    const filters = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(cb => cb.value);
+    console.log(filters)
+    if (filters.length === 0) {
+        productList.forEach(product => product.style.display = 'block');
+    } else {
+        productList.forEach(product => {
+            const productName = product.getAttribute("data-name").toLowerCase();
+            if (filters.some(filter => productName.includes(filter))) {
+                product.style.display = 'block';
+            } else {
+                product.style.display = 'none';
+            }
+        });
+    }
+}
+
+
+
+
