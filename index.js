@@ -17,46 +17,65 @@ closeOffer.addEventListener("click", function(){
 })
 
 
-// var sliderleftbutton = document.querySelector(".slider-left-activate")
-// var sliderrightbutton =document.querySelector(".slider-right-activate")
-// var sliderimage= document.querySelector(".slider-image-container")
-// var slidermargin=0
+// const sliderContainer = document.getElementById('slider-container');
+// const images = document.querySelectorAll('.slider-image');
+// let currentIndex = 0;
 
-// console.log(sliderleftbutton)
+// document.querySelector('.slider-left-activate').addEventListener('click', () => {
+//     currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1;
+//     updateSlider();
+// });
 
-// sliderrightbutton.addEventListener("click",
+// document.querySelector('.slider-right-activate').addEventListener('click', () => {
+//     currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0;
+//     updateSlider();
+// });
 
-// function(){
-//     slidermargin=slidermargin+100
-
-//     if(slidermargin>200)
-//     {
-//         slidermargin=0
-//         sliderimage.style.marginLeft=0;
-//     }
-//     else{
-//         sliderimage.style.marginLeft="-"+slidermargin+"vw";
-//     }
+// function updateSlider() {
+//     sliderContainer.style.transform = `translateX(-${currentIndex * 100}vw)`;
 // }
-// )
 
-// sliderleftbutton.addEventListener("click",
 
-// function(){
+var sliderleftbutton = document.querySelector(".slider-left-activate")
+var sliderrightbutton =document.querySelector(".slider-right-activate")
+var sliderimage= document.querySelector(".slider-image-container")
+var slidermargin=0
 
-//     if(slidermargin==0)
-//     {
+console.log(sliderleftbutton)
+
+sliderrightbutton.addEventListener("click",
+
+function(){
+    slidermargin=slidermargin+100
+
+    if(slidermargin>200)
+    {
+        slidermargin=0
+        sliderimage.style.marginLeft=0;
+    }
+    else{
+        sliderimage.style.marginLeft="-"+slidermargin+"vw";
+    }
+}
+)
+
+sliderleftbutton.addEventListener("click",
+
+function(){
+
+    if(slidermargin==0)
+    {
        
-//         slidermargin=200
-//         sliderimage.style.marginLeft="-"+slidermargin+"vw";
-//     }
-//     else{
+        slidermargin=200
+        sliderimage.style.marginLeft="-"+slidermargin+"vw";
+    }
+    else{
 
-//         slidermargin=slidermargin-100
-//     sliderimage.style.marginLeft="-"+slidermargin+"vw";
-//     }   
-// }
-// )
+        slidermargin=slidermargin-100
+    sliderimage.style.marginLeft="-"+slidermargin+"vw";
+    }   
+}
+)
 
 let button = document.getElementById("likes")
 
